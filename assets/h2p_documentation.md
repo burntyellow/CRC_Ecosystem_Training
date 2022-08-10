@@ -1,6 +1,6 @@
 author: Kim F. Wong
 summary: CRC H2P Cluster User Guide
-id: h2p-user-guide
+id: docs
 categories: codelab,markdown
 environments: Web
 status: Published
