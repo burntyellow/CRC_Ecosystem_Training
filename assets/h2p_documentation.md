@@ -94,14 +94,14 @@ A check within a green sphere indicates successful VPN connection.
 
 CRC provides several modes for accessing the advanced computing and storage resoures, including:
 
-* [SSH Connection via Terminal](#SSH-Connection-via-Terminal)
-* [VIZ Web Portal](#VIZ-Web-Portal)
-* [Open OnDemand Web Portal](#Open-OnDemand-Web-Portal) 
-* [JupyterHub Web Portal](#JupyterHub-Web-Portal)
+* [SSH Connection via Terminal](#ssh)
+* [VIZ Web Portal](#viz)
+* [Open OnDemand Web Portal](#ood) 
+* [JupyterHub Web Portal](#jhub)
 
 We briefly describe each interface below.<br>
 
-### SSH Connection via Terminal
+### SSH Connection via Terminal <a name="ssh"></a>
 
 If your client computer is Windows, I recommend downloading the portable edition of [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html).
 Execute MobaXterm and click on the + Start local terminal button to open an terminal. Recall that in The Ecosystem schematic, the remote login server is 
@@ -132,7 +132,7 @@ X Server component. Below is my login session using iTerm2 and XQuartz, followin
 
 
 
-### VIZ Web Portal
+### VIZ Web Portal <a name="viz"></a>
 
 CRC provides access to a Linux Desktop using a web browser. Point your browser to [viz.crc](https://viz.crc.pitt.edu/auth/ssh) and authenticate using
 your Pitt credentials.
@@ -150,7 +150,7 @@ storage resources
 
 
 
-### Open OnDemand Web Portal
+### Open OnDemand Web Portal <a name="ood"></a>
 
 Similar to viz.crc, our Open OnDemand web portal provides our users access to interactive compute resources. The full documentation for CRC's 
 implementation features are described [here](https://crc.pitt.edu/resources/htc-cluster/open-ondemand). Point your browser to 
@@ -177,7 +177,7 @@ In this instance, the compute node allocated to host the RStudio Server is htc-n
 
 
 
-### JupyterHub Web Portal
+### JupyterHub Web Portal <a name="jhub"></a>
 
 CRC provides a JupyterHub instance in support of teaching. Point your browser to [hub.crc](hub.crc.pitt.edu) and authenticate using your Pitt 
 credentials when presented with the Pitt Passport page. Clicking on Start My Server provides a panel for requesting access to CPUs and GPUs

@@ -88,13 +88,13 @@
       <google-codelab-step label="Access Modalities" duration="0">
         <p>CRC provides several modes for accessing the advanced computing and storage resoures, including:</p>
 <ul>
-<li><a href="#SSH-Connection-via-Terminal" target="_blank">SSH Connection via Terminal</a></li>
-<li><a href="#VIZ-Web-Portal" target="_blank">VIZ Web Portal</a></li>
-<li><a href="#Open-OnDemand-Web-Portal" target="_blank">Open OnDemand Web Portal</a></li>
-<li><a href="#JupyterHub-Web-Portal" target="_blank">JupyterHub Web Portal</a></li>
+<li><a href="#ssh" target="_blank">SSH Connection via Terminal</a></li>
+<li><a href="#viz" target="_blank">VIZ Web Portal</a></li>
+<li><a href="#ood" target="_blank">Open OnDemand Web Portal</a></li>
+<li><a href="#jhub" target="_blank">JupyterHub Web Portal</a></li>
 </ul>
 <p>We briefly describe each interface below.<br></p>
-<h2 is-upgraded>SSH Connection via Terminal</h2>
+<h2 is-upgraded>SSH Connection via Terminal <a name="ssh" target="_blank"></a></h2>
 <p>If your client computer is Windows, I recommend downloading the portable edition of <a href="https://mobaxterm.mobatek.net/download-home-edition.html" target="_blank">MobaXterm</a>. Execute MobaXterm and click on the + Start local terminal button to open an terminal. Recall that in The Ecosystem schematic, the remote login server is h2p.crc.pitt.edu  We are going to use <a href="https://en.wikipedia.org/wiki/Secure_Shell" target="_blank">ssh</a> to connect to the H2P login node. Here are the connection details:</p>
 <ul>
 <li><strong>connection protocol:</strong> ssh</li>
@@ -108,14 +108,14 @@
 <p class="image-container"><img alt="mobaxterm" src="img/aeb54643c02f4391.png"><br></p>
 <p>If your client computer is MacOS, I recommend downloading <a href="https://iterm2.com" target="_blank">iTerm2</a>. While MacOS already has a builtin Terminal in the Utilities folder, iTerm2 is more feature-rich. iTerm2 is just a terminal. To render graphics, you will need to install <a href="https://www.xquartz.org" target="_blank">XQuartz</a>, which provides the X Server component. Below is my login session using iTerm2 and XQuartz, following the same syntax as shown earlier.</p>
 <p class="image-container"><img alt="iterm2xquartz" src="img/ecf2d4d6dfcbbbe5.png"><br><br><br></p>
-<h2 is-upgraded>VIZ Web Portal</h2>
+<h2 is-upgraded>VIZ Web Portal <a name="viz" target="_blank"></a></h2>
 <p>CRC provides access to a Linux Desktop using a web browser. Point your browser to <a href="https://viz.crc.pitt.edu/auth/ssh" target="_blank">viz.crc</a> and authenticate using your Pitt credentials.</p>
 <p class="image-container"><img alt="viz-01" src="img/6aed8ca7fd691ceb.png"><br></p>
 <p>Click Launch Session, click on MATE, and click Launch</p>
 <p class="image-container"><img alt="viz-02" src="img/eda7eab0a323f364.png"><br></p>
 <p>What is presented to you will be a Linux Desktop, with graphical capabilities, where you can interact with the rest of the CRC compute and storage resources</p>
 <p class="image-container"><img alt="viz-03" src="img/dd8c25201e44a2cf.png"><br><br><br></p>
-<h2 is-upgraded>Open OnDemand Web Portal</h2>
+<h2 is-upgraded>Open OnDemand Web Portal <a name="ood" target="_blank"></a></h2>
 <p>Similar to viz.crc, our Open OnDemand web portal provides our users access to interactive compute resources. The full documentation for CRC&#39;s implementation features are described <a href="https://crc.pitt.edu/resources/htc-cluster/open-ondemand" target="_blank">here</a>. Point your browser to <a href="https://ondemand.htc.crc.pitt.edu" target="_blank">OnDemand</a> and authenticate using your Pitt credentials</p>
 <p class="image-container"><img alt="ondemand-01" src="img/20735eb5154ac0d9.png"><br></p>
 <p>Once you log in, you will be presented with a menu of options. For example, click on the Interactive Apps dropdown menu</p>
@@ -126,7 +126,7 @@
 <p class="image-container"><img alt="ondemand-04" src="img/c9567be1f34f7c4f.png"><br></p>
 <p>In this instance, the compute node allocated to host the RStudio Server is htc-n24 with 48 cores for a period of 24 hours.</p>
 <p class="image-container"><img alt="ondemand-05" src="img/2fecc8bc21cda354.png"><br><br><br></p>
-<h2 is-upgraded>JupyterHub Web Portal</h2>
+<h2 is-upgraded>JupyterHub Web Portal <a name="jhub" target="_blank"></a></h2>
 <p>CRC provides a JupyterHub instance in support of teaching. Point your browser to <a href="hub.crc.pitt.edu" target="_blank">hub.crc</a> and authenticate using your Pitt credentials when presented with the Pitt Passport page. Clicking on Start My Server provides a panel for requesting access to CPUs and GPUs</p>
 <p class="image-container"><img alt="hub-01" src="img/52fcc9e570cb3178.png"><br></p>
 <p>followed by the familiar Python environment</p>
