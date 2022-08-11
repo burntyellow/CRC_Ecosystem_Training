@@ -34,7 +34,7 @@ the remote login server. CRC compute and storage resources are behind a firewall
 
 <img src="crc-firewall.png"><br>
 
-## Establishing a VPN to PittNet
+## Establishing a VPN connection to PittNet
 
 The CRC computing and storage resources reside at the Pitt data center and are firewalled within PittNet. What this means is that you will
 need to establish a VPN in order to gain access. Pitt offers two VPN tools: (1) Pulse VPN and (2) Global Protect. Both software can be 
@@ -94,14 +94,14 @@ A check within a green sphere indicates successful VPN connection.
 
 CRC provides several modes for accessing the advanced computing and storage resoures, including:
 
-* traditional terminal
-* Web GUI portal
-* Open OnDemand 
-* JupyterHub
+* [SSH Connection via Terminal](#ssh-connection-via-terminal)
+* [VIZ Web Portal](#viz-web-portal)
+* [Open OnDemand Web Portal](#open-ondemand-web-portal) 
+* [JupyterHub Web Portal](#jupyterhub-web-portal)
 
 We briefly describe each interface below.<br>
 
-### 1. The traditional terminal
+### SSH Connection via Terminal
 
 If your client computer is Windows, I recommend downloading the portable edition of [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html).
 Execute MobaXterm and click on the + Start local terminal button to open an terminal. Recall that in The Ecosystem schematic, the remote login server is 
@@ -132,7 +132,7 @@ X Server component. Below is my login session using iTerm2 and XQuartz, followin
 
 
 
-### 2. Web GUI Portal
+### VIZ Web Portal
 
 CRC provides access to a Linux Desktop using a web browser. Point your browser to [viz.crc](https://viz.crc.pitt.edu/auth/ssh) and authenticate using
 your Pitt credentials.
@@ -150,7 +150,7 @@ storage resources
 
 
 
-### 3. Open OnDemand
+### Open OnDemand Web Portal
 
 Similar to viz.crc, our Open OnDemand web portal provides our users access to interactive compute resources. The full documentation for CRC's 
 implementation features are described [here](https://crc.pitt.edu/resources/htc-cluster/open-ondemand). Point your browser to 
@@ -177,7 +177,7 @@ In this instance, the compute node allocated to host the RStudio Server is htc-n
 
 
 
-### 4. JupyterHub
+### JupyterHub Web Portal
 
 CRC provides a JupyterHub instance in support of teaching. Point your browser to [hub.crc](hub.crc.pitt.edu) and authenticate using your Pitt 
 credentials when presented with the Pitt Passport page. Clicking on Start My Server provides a panel for requesting access to CPUs and GPUs
