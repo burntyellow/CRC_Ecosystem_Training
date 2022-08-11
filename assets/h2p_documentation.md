@@ -94,10 +94,10 @@ A check within a green sphere indicates successful VPN connection.
 
 CRC provides several modes for accessing the advanced computing and storage resoures, including:
 
-* [SSH Connection via Terminal](#ssh-connection-via-terminal)
-* [VIZ Web Portal](#viz-web-portal)
-* [Open OnDemand Web Portal](#open-ondemand-web-portal) 
-* [JupyterHub Web Portal](#jupyterhub-web-portal)
+* [SSH Connection via Terminal](#SSH-Connection-via-Terminal)
+* [VIZ Web Portal](#VIZ-Web-Portal)
+* [Open OnDemand Web Portal](#Open-OnDemand-Web-Portal) 
+* [JupyterHub Web Portal](#JupyterHub-Web-Portal)
 
 We briefly describe each interface below.<br>
 
