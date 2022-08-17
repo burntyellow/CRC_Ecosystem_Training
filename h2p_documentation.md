@@ -41,13 +41,38 @@ need to establish a VPN in order to gain access. Pitt offers two VPN tools: (1) 
 downloaded from [software.pitt.edu](https://software.pitt.edu/).
 
 **References**
-* [PittNet VPN Pulse Secure](https://www.technology.pitt.edu/services/pittnet-vpn-pulse-secure)
 * [Duo Multifactor Authentication](https://www.technology.pitt.edu/services/multifactor-authentication-pitt)
+* [PittNet VPN: Global Protect](https://www.technology.pitt.edu/services/pittnet-vpn-globalprotect)
+* [PittNet VPN: Pulse Secure](https://www.technology.pitt.edu/services/pittnet-vpn-pulse-secure)
 
 
 We outline the steps and settings each VPN client below.
 
-### 1. Pulse VPN 
+### 1. Global Protect
+
+Download and run the Global Protect installer.
+
+<img src="global-protect_01.png" width="600"><br>
+
+If presented with the option, make sure you have selected <strong>GlobalProtect System extensions</strong>.
+
+<img src="global-protect_02.png" width="600"><br>
+
+After the installation completes, MacOS may block loading of the system extension
+
+<img src="global-protect_04.png" width="600"><br>
+
+We want to <em> whitelist </em> the Global Protect system extension by clicking on <strong> OK </strong> to 
+modify the MacOS <strong> Security & Privacy </strong> settings. You may need to first <em> unlock </em> this
+panel before being allowed to load GlobalProtect 
+
+<img src="global-protect_05.png" width="600"><br>
+
+If Global Protect is running in the background, you will see the <em> globe </em> <em> icon in your menu bar
+
+<img src="global-protect_06.png" width="600"><br>
+
+### 2. Pulse VPN 
 
 Download and run the Pulse installer.
 
@@ -87,8 +112,6 @@ The CRC access role is Firewall-SAM-USERS-Pulse.
 A check within a green sphere indicates successful VPN connection. 
 
 <img src="pulse_09.png" width="600"><br>
-
-### 2. Global Protect
 
 ## Access Modalities
 
