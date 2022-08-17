@@ -3,15 +3,15 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2022-08-11T13:38:39-04:00",
+  "updated": "2022-08-17T13:33:17-04:00",
   "id": "docs",
-  "duration": 0,
-  "title": "CRC H2P Cluster User Guide",
+  "duration": 19,
+  "title": "How to Access and Use the CRC Ecosystem",
   "summary": "CRC H2P Cluster User Guide",
   "source": "assets/h2p_documentation.md",
   "theme": "",
   "status": [
-    "published"
+    "hidden"
   ],
   "category": [
     "codelab",
@@ -20,5 +20,6 @@
   "tags": [
     "web"
   ],
+  "feedback": "https://github.com/Mrc0113/codelab-4-codelab",
   "url": "docs"
 }

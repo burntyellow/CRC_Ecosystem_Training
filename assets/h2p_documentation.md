@@ -1,16 +1,33 @@
+
+
+<!-- Codelab Metadata -->
 author: Kim F. Wong
 summary: CRC H2P Cluster User Guide
 id: docs
 categories: codelab,markdown
 environments: Web
-status: Published
-#feedback link: https://github.com/Mrc0113/codelab-4-codelab
+status: Hidden
+feedback link: https://github.com/Mrc0113/codelab-4-codelab
+<!-- ---------------- -->
 
-# CRC H2P Cluster User Guide
+# How to Access and Use the CRC Ecosystem
+
+## Instructions
+Duration: 0
+
+### What You'll Learn
+- Overview of CRC
+- Ecosystem
+- How to establish a VPN connection
+- Access modalities
+
+### What You'll Need
+- A CRC Account, sponsored on a Faculty Allocation.
 
 ## Overview of CRC
+Duration: 0:19:00
 
-#### Mission
+### Mission
 The Center for Research Computing supports leading-edge research with free access to advanced computing hardware and software for fields 
 across the entire research community, along with training and consultation by CRC research faculty. CRC offers the following services:
 
@@ -20,21 +37,21 @@ across the entire research community, along with training and consultation by CR
 
 ![clusters](clusters.png)<br>
 
-
-**Resources:**
 * Website: [https://crc.pitt.edu](https://crc.pitt.edu)
 * Getting Started: [https://crc.pitt.edu/getting-started](https://crc.pitt.edu/getting-started)
 * User Support: [https://crc.pitt.edu/UserSupport](https://crc.pitt.edu/UserSupport)
 
 
 ## The Ecosystem
+Duration: 0
 
 Here is a schematic of all the key parts of the advanced computing infrastructure. The users' computer is the Client. h2p.crc.pitt.edu is 
 the remote login server. CRC compute and storage resources are behind a firewall within PittNet.
 
 <img src="crc-firewall.png"><br>
 
-## Establishing a VPN connection to PittNet
+
+## Establishing a VPN Connection to PittNet
 
 The CRC computing and storage resources reside at the Pitt data center and are firewalled within PittNet. What this means is that you will
 need to establish a VPN in order to gain access. Pitt offers two VPN tools: (1) Pulse VPN and (2) Global Protect. Both software can be 
@@ -44,8 +61,6 @@ downloaded from [software.pitt.edu](https://software.pitt.edu/).
 * [PittNet VPN Pulse Secure](https://www.technology.pitt.edu/services/pittnet-vpn-pulse-secure)
 * [Duo Multifactor Authentication](https://www.technology.pitt.edu/services/multifactor-authentication-pitt)
 
-
-We outline the steps and settings each VPN client below.
 
 ### 1. Pulse VPN 
 
@@ -89,6 +104,8 @@ A check within a green sphere indicates successful VPN connection.
 <img src="pulse_09.png" width="600"><br>
 
 ### 2. Global Protect
+
+TODO: add content for connecting with global protect
 
 ## Access Modalities
 
@@ -1370,6 +1387,8 @@ crc-idle.py          crc-job-stats.py     crc-quota.py         crc-scontrol.py  
 crc-interactive.py   crc-proposal-end.py  crc-scancel.py       crc-sinfo.py         crc-sus.py
 [gnowmik@login1 ~]$ crc-
 ```
+
+## What we've covered
 
 ## Asking for Help
 
