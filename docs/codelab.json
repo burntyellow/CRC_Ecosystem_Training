@@ -3,23 +3,23 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2022-08-17T13:33:17-04:00",
+  "updated": "2022-08-24T10:36:03-04:00",
   "id": "docs",
-  "duration": 19,
+  "duration": 0,
   "title": "How to Access and Use the CRC Ecosystem",
-  "summary": "CRC H2P Cluster User Guide",
-  "source": "assets/h2p_documentation.md",
+  "summary": "Guide for accessing and using the University of Pittsburgh Center for",
+  "source": "h2p_documentation.md",
   "theme": "",
   "status": [
     "hidden"
   ],
   "category": [
-    "codelab",
-    "markdown"
+    "crc",
+    "workshop",
+    "hpc"
   ],
   "tags": [
     "web"
   ],
-  "feedback": "https://github.com/Mrc0113/codelab-4-codelab",
   "url": "docs"
 }
