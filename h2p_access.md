@@ -13,7 +13,7 @@ need to establish a VPN in order to gain access.
 
 ## The high-level view of where all the resources are located
 
-![h2p-firewall](CRC-firewall.png)
+![h2p-firewall](crc-firewall.png)
 
 
 

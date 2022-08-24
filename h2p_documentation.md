@@ -1,220 +1,199 @@
-author: Kim F. Wong
-summary: CRC H2P Cluster User Guide
-id: h2p-user-guide
-categories: codelab,markdown
+<!-- Codelab Metadata -->
+author: Kim F. Wong, Nickolas Comeau
+summary: Guide for accessing and using the University of Pittsburgh Center for
+Research Computing's High performance computing ecosystem.
+id: docs
+categories: CRC, workshop, HPC
 environments: Web
-status: Published
-#feedback link: https://github.com/Mrc0113/codelab-4-codelab
+status: Hidden
+feedback link:
+<!-- ---------------- -->
 
-# CRC H2P Cluster User Guide
+# How to Access and Use the CRC Ecosystem
 
 ## Overview of CRC
+Duration: 0
 
-#### Mission
-The Center for Research Computing supports leading-edge research with free access to advanced computing hardware and software for fields 
+### Mission
+The Center for Research Computing supports leading-edge research with free access to advanced computing hardware and software for fields
 across the entire research community, along with training and consultation by CRC research faculty. CRC offers the following services:
 
 * Access to cutting-edge computer hardware and software for enabling transformative research
 * Workshops teaching the most effective ways to use Pitt CRC's computing resources
-* Personalized consultation on refining projects at the computational code or workflow level 
+* Personalized consultation on refining projects at the computational code or workflow level
 
-![clusters](clusters.png)<br>
+![clusters](assets/clusters.png)
 
+## Accessing the Cluster
+Duration:0
 
-**Resources:**
-* Website: [https://crc.pitt.edu](https://crc.pitt.edu)
-* Getting Started: [https://crc.pitt.edu/getting-started](https://crc.pitt.edu/getting-started)
-* User Support: [https://crc.pitt.edu/UserSupport](https://crc.pitt.edu/UserSupport)
+### What You'll Learn
+- Ecosystem
+- How to establish a VPN connection
+- Different Access modalities to CRC resources
 
+### What You'll Need
+- A CRC User Account, sponsored on a Faculty Allocation.
 
-## The Ecosystem
+### The Ecosystem
 
-Here is a schematic of all the key parts of the advanced computing infrastructure. The users' computer is the Client. h2p.crc.pitt.edu is 
+Here is a schematic of all the key parts of the advanced computing infrastructure. The users' computer is the Client. h2p.crc.pitt.edu is
 the remote login server. CRC compute and storage resources are behind a firewall within PittNet.
 
-<img src="crc-firewall.png"><br>
+<img src="assets/crc-firewall.png"><br>
 
-## Establishing a VPN to PittNet
-
+<!-- Establishing a VPN Connection to PittNet -->
+### Establishing a VPN Connection to PittNet
 The CRC computing and storage resources reside at the Pitt data center and are firewalled within PittNet. What this means is that you will
-need to establish a VPN in order to gain access. Pitt offers two VPN tools: (1) Pulse VPN and (2) Global Protect. Both software can be 
+need to establish a VPN in order to gain access. Pitt offers two VPN tools: (1) Pulse VPN and (2) Global Protect. Both software can be
 downloaded from [software.pitt.edu](https://software.pitt.edu/).
-
 **References**
 * [Duo Multifactor Authentication](https://www.technology.pitt.edu/services/multifactor-authentication-pitt)
 * [PittNet VPN: Global Protect](https://www.technology.pitt.edu/services/pittnet-vpn-globalprotect)
 * [PittNet VPN: Pulse Secure](https://www.technology.pitt.edu/services/pittnet-vpn-pulse-secure)
-
-
 We outline the steps and settings each VPN client below.
 
-### 1. Global Protect
-
+<!-- Global Protect -->
+### Global Protect
 Download and run the Global Protect installer.
+<img src="assets/global-protect_01.png" width="600"><br>
 
-<img src="global-protect_01.png" width="600"><br>
+![global-protect_01](assets/global-protect_01.png)
 
 If presented with the option, make sure you have selected <strong>GlobalProtect System extensions</strong>.
-
-<img src="global-protect_02.png" width="600"><br>
-
+<img src="assets/global-protect_02.png" width="600"><br>
 After the installation completes, MacOS may block loading of the system extension
-
-<img src="global-protect_04.png" width="600"><br>
-
-We want to <em> whitelist </em> the Global Protect system extension by clicking on <strong> OK </strong> to 
+<img src="assets/global-protect_04.png" width="600"><br>
+We want to <em> whitelist </em> the Global Protect system extension by clicking on <strong> OK </strong> to
 modify the MacOS <strong> Security & Privacy </strong> settings. You may need to first <em> unlock </em> this
-panel before being allowed to load GlobalProtect 
-
-<img src="global-protect_05.png" width="600"><br>
-
+panel before being allowed to load GlobalProtect
+<img src="assets/global-protect_05.png" width="600"><br>
 If Global Protect is running in the background, you will see the <em> globe </em> <em> icon in your menu bar
+<img src="assets/global-protect_06.png" width="600"><br>
 
-<img src="global-protect_06.png" width="600"><br>
-
-### 2. Pulse VPN 
-
+<!-- Pulse VPN -->
+### Pulse VPN
 Download and run the Pulse installer.
-
-<img src="pulse_01.png" width="600"><br>
-
-When you first run Pulse Secure, there will be no Connections entries. We want to create a new Connection entry with the Server field 
+<img src="assets/pulse_01.png" width="600"><br>
+When you first run Pulse Secure, there will be no Connections entries. We want to create a new Connection entry with the Server field
 set to sremote.pitt.edu. The Name field can be arbitrary but Pitt will work. The type should be set to Policy Secure (UAC).
-
-<img src="pulse_02.png" width="600"><br>
-
+<img src="assets/pulse_02.png" width="600"><br>
 Once you have the Connections entry added, click on the Connect button to initiate the VPN
-<img src="pulse_03.png" width="600"><br>
-
+<img src="assets/pulse_03.png" width="600"><br>
 <aside class="positive">
-In the Pre Sign-In Notification popup, pay close attention to the instructions regarding the secondary password field. This is 
+In the Pre Sign-In Notification popup, pay close attention to the instructions regarding the secondary password field. This is
 highlighted in the yellow box.
 </aside>
-
-<img src="pulse_04.png" width="600"><br>
-
+<img src="assets/pulse_04.png" width="600"><br>
 Connect using your Pitt User Name and Password
-
-<img src="pulse_05.png" width="600"><br>
-
+<img src="assets/pulse_05.png" width="600"><br>
 Most Pitt members have set up Duo on their cell phone as the secondary authentication factor. In this case, the Secondary Passworkd is PUSH.
-
-<img src="pulse_06.png" width="600"><br>
-
+<img src="assets/pulse_06.png" width="600"><br>
 This will prompt for login approval via the Duo app on your phone.
-
-<img src="pulse_07.png" width="400"><br>
-
+<img src="assets/pulse_07.png" width="400"><br>
 The CRC access role is Firewall-SAM-USERS-Pulse.
+<img src="assets/pulse_08.png" width="600"><br>
+A check within a green sphere indicates successful VPN connection.
+<img src="assets/pulse_09.png" width="600"><br>
 
-<img src="pulse_08.png" width="600"><br>
+<!-- Access Modalities -->
 
-A check within a green sphere indicates successful VPN connection. 
-
-<img src="pulse_09.png" width="600"><br>
-
-## Access Modalities
-
+#### Access Modalities
 CRC provides several modes for accessing the advanced computing and storage resoures, including:
-
-* traditional terminal
-* Web GUI portal
-* Open OnDemand 
-* JupyterHub
-
+* <a href="#ssh" target="_self">SSH Connection via Terminal</a>
+* <a href="#viz" target="_self">VIZ Web Portal</a>
+* <a href="#ood" target="_self">Open OnDemand Web Portal</a>
+* <a href="#jhub" target="_self">JupyterHub Web Portal</a>
 We briefly describe each interface below.<br>
 
-### 1. The traditional terminal
-
+<!-- SSH Connection via Terminal -->
+#### <a name="ssh">SSH Connection via Terminal</a>
 If your client computer is Windows, I recommend downloading the portable edition of [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html).
-Execute MobaXterm and click on the + Start local terminal button to open an terminal. Recall that in The Ecosystem schematic, the remote login server is 
-h2p.crc.pitt.edu  We are going to use [ssh](https://en.wikipedia.org/wiki/Secure_Shell) to connect to the H2P login node. Here are the connection details:
+Execute MobaXterm and click on the + Start local terminal button to open an terminal. Recall that in The Ecosystem schematic, the remote login server is
+h2p.crc.pitt.edu  We are going to use [ssh](https://en.wikipedia.org/wiki/Secure_Shell) to connect to the H2P login node.
 
+Here are the connection details:
 - **connection protocol:** ssh
 - **remote hostname:** h2p.crc.pitt.edu
 - **authentication credentials:** Pitt username and password
 
-The syntax to connect to the H2P login node is 
+The syntax to connect to the H2P login node is
 
-```console
+```bash
 ssh -X <username>@h2p.crc.pitt.edu
 ```
+where \<username\> is your Pitt username in lowercase and the answer to the prompt is the corresponding password. The `-X` option enables X forwarding for applications that generate a GUI such as `xclock`. If you type `xclock` on the commandline, you should get a clock app showing in Windows.
 
-where \<username\> is your Pitt username in lowercase and the answer to the prompt is the corresponding password. The `-X` option enables X forwarding
-for applications that generate a GUI such as `xclock`. If you type `xclock` on the commandline, you should get a clock app showing in Windows. Below is 
-my login session from MobaXterm.
+Below is a login session from MobaXterm.
 
-![mobaxterm](mobaxterm.png)<br>
+![mobaxterm](assets/mobaxterm.png)<br>
 
-If your client computer is MacOS, I recommend downloading [iTerm2](https://iterm2.com). While MacOS already has a builtin Terminal in the Utilities folder, 
-iTerm2 is more feature-rich. iTerm2 is just a terminal. To render graphics, you will need to install [XQuartz](https://www.xquartz.org), which provides the
-X Server component. Below is my login session using iTerm2 and XQuartz, following the same syntax as shown earlier.
+If your client computer is MacOS, a recommended tool is [iTerm2](https://iterm2.com).
+While MacOS already has a built-in Terminal in the Utilities folder, iTerm2 is more feature-rich.
+To render graphics, a tool like [XQuartz](https://www.xquartz.org) is needed provide the
+X Server component.
 
-![iterm2xquartz](iterm2-xquartz.png)<br><br><br>
+Below is a login session using iTerm2 and XQuartz, following the same syntax as shown earlier.
+![iterm2xquartz](assets/iterm2-xquartz.png)<br><br>
+<!-- End of Section -->
 
-
-
-
-### 2. Web GUI Portal
-
+<!-- VIZ Web Portal -->
+#### <a name="viz">VIZ Web Portal</a>
 CRC provides access to a Linux Desktop using a web browser. Point your browser to [viz.crc](https://viz.crc.pitt.edu/auth/ssh) and authenticate using
+
 your Pitt credentials.
-
-![viz-01](viz-01.png)<br>
-
+![viz-01](assets/viz-01.png)<br>
 Click Launch Session, click on MATE, and click Launch
-
-![viz-02](viz-02.png)<br>
-
-What is presented to you will be a Linux Desktop, with graphical capabilities, where you can interact with the rest of the CRC compute and 
+![viz-02](assets/viz-02.png)<br>
+What is presented to you will be a Linux Desktop, with graphical capabilities, where you can interact with the rest of the CRC compute and
 storage resources
+![viz-03](assets/viz-03.png)<br><br><br>
+<!-- End of Section -->
 
-![viz-03](viz-03.png)<br><br><br>
-
-
-
-### 3. Open OnDemand
-
-Similar to viz.crc, our Open OnDemand web portal provides our users access to interactive compute resources. The full documentation for CRC's 
-implementation features are described [here](https://crc.pitt.edu/resources/htc-cluster/open-ondemand). Point your browser to 
+<!-- Open OnDemand Web Portal -->
+#### <a name="ood">Open OnDemand Web Portal</a>
+Similar to viz.crc, our Open OnDemand web portal provides our users access to interactive compute resources. The full documentation for CRC's
+implementation features are described [here](https://crc.pitt.edu/resources/htc-cluster/open-ondemand). Point your browser to
 [OnDemand](https://ondemand.htc.crc.pitt.edu) and authenticate using your Pitt credentials
 
-![ondemand-01](ondemand-01.png)<br>
+![ondemand-01](assets/ondemand-01.png)<br>
 
 Once you log in, you will be presented with a menu of options. For example, click on the Interactive Apps dropdown menu
 
-![ondemand-02](ondemand-02.png)<br>
+![ondemand-02](assets/ondemand-02.png)<br>
 
 If you select the R Studio Server option, you will be presented with a panel where you can configure the resources to suit your needs
 
-![ondemand-03](ondemand-03.png)<br>
+![ondemand-03](assets/ondemand-03.png)<br>
 
 Clicking Launch will submit the resource request to the queue and will present a button to Connect to RStudio Server when the resources have
 been allocated.
 
-![ondemand-04](ondemand-04.png)<br>
+![ondemand-04](assets/ondemand-04.png)<br>
 
 In this instance, the compute node allocated to host the RStudio Server is htc-n24 with 48 cores for a period of 24 hours.
 
-![ondemand-05](ondemand-05.png)<br><br><br>
+![ondemand-05](assets/ondemand-05.png)<br><br><br>
 
 
 
-### 4. JupyterHub
+#### <a name="jhub">JupyterHub Web Portal</a>
 
-CRC provides a JupyterHub instance in support of teaching. Point your browser to [hub.crc](hub.crc.pitt.edu) and authenticate using your Pitt 
+CRC provides a JupyterHub instance in support of teaching. Point your browser to [hub.crc](hub.crc.pitt.edu) and authenticate using your Pitt
 credentials when presented with the Pitt Passport page. Clicking on Start My Server provides a panel for requesting access to CPUs and GPUs
 
-![hub-01](hub-01.png)<br>
+![hub-01](assets/hub-01.png)<br>
 
 followed by the familiar Python environment
 
-![hub-02](hub-02.png)<br>
+![hub-02](assets/hub-02.png)<br>
+
 
 
 ## Available Software Stack
+Duration: 0
 
-Once you become familiar with the Linux commmandline, the traditional terminal interface will become the most efficient method for 
+Once you become familiar with the Linux commmandline, the traditional terminal interface will become the most efficient method for
 accessing the CRC compute and storage resources. I will now log in to the cluster using my *testing* `gnowmik` account, which is `kimwong` spelled
 backwards and does not have the superuser privileges in my default account
 
@@ -253,7 +232,7 @@ CRC  Desktop  zzz_cleanmeup
 [gnowmik@login1 ~]$
 ```
 
-CRC uses the [Lmod](https://github.com/TACC/Lmod) Environment Modules tool to manage and provision software applications. The command 
+CRC uses the [Lmod](https://github.com/TACC/Lmod) Environment Modules tool to manage and provision software applications. The command
 `module spider` shows if a package is available. For example
 
 ```bash
@@ -340,7 +319,7 @@ shows that we have several versions of Python available. Packages typically have
 [gnowmik@login1 ~]$
 ```
 
-If you attempt to directly `load` the this Python to your session environment, you will encounter an error because the gcc/8.2.0 dependency 
+If you attempt to directly `load` the this Python to your session environment, you will encounter an error because the gcc/8.2.0 dependency
 has not been satisfied
 
 ```bash
@@ -385,8 +364,8 @@ Currently Loaded Modules:
 
 [gnowmik@login1 ~]$
 ```
-Now let's backup and fill in our knowledge gap regarding two commands that were introduced under the radar. They are 
-`module purge` and `module list`. These commands do exactly as the words imply. `module list` is to list all the loaded 
+Now let's backup and fill in our knowledge gap regarding two commands that were introduced under the radar. They are
+`module purge` and `module list`. These commands do exactly as the words imply. `module list` is to list all the loaded
 software packages and `module purge` is to get rid of all the packages from your session environment
 
 ```bash
@@ -460,7 +439,7 @@ Currently Loaded Modules:
 [gnowmik@login1 ~]$
 ```
 
-In the above commands, I loaded Matlab R2021b and then Python. Notice that Matlab can be loaded directly but that there is also a side effect of 
+In the above commands, I loaded Matlab R2021b and then Python. Notice that Matlab can be loaded directly but that there is also a side effect of
 automatically loading `fontconfig/2.10.95`. Next, I loaded the `gcc/8.2.0` dependecy before the specific Python package. This Python package also
 has a side effect of automatically loading `openmpi/3.1.1`. Lastly, when I unload the Matlab package, `matlab/R2021b` and `fontconfig/2.10.95`
 are removed from the environment.
@@ -488,30 +467,29 @@ Currently Loaded Modules:
 [gnowmik@login1 ~]$
 ```
 
-The effect of unloading a package module is to remove all depedencies and to return the session environment to the state before 
-loading the package. The command to unload a package is `module rm ` <package>. You might also wonder if `module unload` might be 
+The effect of unloading a package module is to remove all depedencies and to return the session environment to the state before
+loading the package. The command to unload a package is `module rm ` <package>. You might also wonder if `module unload` might be
 a better choice of words for the command. As a matter of fact, `module rm` and `module unload` are synonymous. Try it out.
 
-These are the few commands you need to memorize for manipulating the software package environments. The reason why it is necessary 
-to employ Lmod is because our research user community use a broad range of software applications and not all applications are 
+These are the few commands you need to memorize for manipulating the software package environments. The reason why it is necessary
+to employ Lmod is because our research user community use a broad range of software applications and not all applications are
 compatible with each other.
 
-## SLURM Batch Queueing System
 
-Because CRC operates a shared resource for the Pitt research community, we need a tool to ensure fair and equitable access. CRC 
+## SLURM Batch Queueing System
+Because CRC operates a shared resource for the Pitt research community, we need a tool to ensure fair and equitable access. CRC
 uses the [SLURM workload manager](https://slurm.schedmd.com/quickstart.html) to manage job submissions. This is a batch queueing system
 that will allocate resources based on defined policies. What this means is that users will be submitting job scripts to the queue and
-jobs will run when the SLURM scheduler allocates the requested resources in accordance to scheduling policies. Let's jump right into 
-the details.
+jobs will run when the SLURM scheduler allocates the requested resources in accordance to scheduling policies. Lets jump right into the details.
 
 Shown below is the architecture of a SLURM job submission script
 
-![slurm-script-arch](slurm-script-arch.png)<br>
+![slurm-script-arch](assets/slurm-script-arch.png)<br>
 
 The SLURM job submission script is essentially a text file that contains (1) commands to SLURM, (2) commands to Lmod, (3) any
 environment settings for communication or software, and (4) the application-specific execution command. The commands execute
 sequentially line-by-line from top to bottom (unless you <em>background</em> the command with an `&` at the end). CRC provides
-a growing number of example job submission scripts for specific software applications 
+a growing number of example job submission scripts for specific software applications
 
 ```bash
 [gnowmik@login1 ~]$ ls /ihome/crc/how_to_run/
@@ -525,9 +503,13 @@ amber   blender           damask  fdtd             gamess  gromacs   ipc        
 If you have multiple SLURM accounts, you can specify which account to debit the SUs from by adding the `--account` option
 to the SLURM directives in your job submission script. For example, to use the SUs from the `workshop` account, use
 
+
+
+
 ```bash
 #SBATCH --account=workshops
 ```
+
 You can use the following command to see what account you are associated with
 
 ```bash
@@ -547,7 +529,7 @@ You can use the following command to see what account you are associated with
 [gnowmik@login1 ~]$
 ```
 
-As shown, user `gnowmik` is associated with the `kwong`, `sam`, and the `workshops` account. To see your default account that will be used when you don't 
+As shown, user `gnowmik` is associated with the `kwong`, `sam`, and the `workshops` account. To see your default account that will be used when you don't
 explicitly specify with the `--account` option, use
 
 ```bash
@@ -615,8 +597,8 @@ mpirun -n $SLURM_NTASKS \
 [gnowmik@login1 mocvnhlysm_1N.24C_OMPI_SMP]$
 ```
 
-The SLURM directives begin with the `#SBATCH` prefix and instructs the scheduler to allocate `1` node with `12` cores within the 
-`high-mem` partition on the `smp` cluster for `1` hour. Then the submission script loads the Amber molecular dynamics package 
+The SLURM directives begin with the `#SBATCH` prefix and instructs the scheduler to allocate `1` node with `12` cores within the
+`high-mem` partition on the `smp` cluster for `1` hour. Then the submission script loads the Amber molecular dynamics package
 and dependencies, followed by application-specific execution syntax. Use `sbatch` to submit the job
 
 ```bash
@@ -642,7 +624,7 @@ CLUSTER: smp
 ```
 
 Every job submission is assigned a job id. In this case it is `5103575`. Use the `squeue` command to check on the status of
-submitted jobs. The `-M` option is to specify the cluster and the `-u` flag is used to only output information for a 
+submitted jobs. The `-M` option is to specify the cluster and the `-u` flag is used to only output information for a
 particular username
 
 ```bash
@@ -685,7 +667,7 @@ CLUSTER: smp
 [gnowmik@login1 mocvnhlysm_1N.24C_OMPI_SMP]$
 ```
 
-In the time needed to write the descriptions, the job had completed. If you leave out the `-u` option to squeue, you get 
+In the time needed to write the descriptions, the job had completed. If you leave out the `-u` option to squeue, you get
 reporting of everyone's jobs on the specified cluster
 
 ```bash
@@ -886,8 +868,8 @@ CLUSTER: gpu
 [gnowmik@login1 mocvnhlysm_2GTX1080.2C]$
 ```
 
-You see that we now have two jobs running on the GPU cluster, one on the `titanx` partition and the other on the `gtx1080` 
-partition. You might wonder, <em is there any way I can see the state of the cluster and the partitions </em>? You can 
+You see that we now have two jobs running on the GPU cluster, one on the `titanx` partition and the other on the `gtx1080`
+partition. You might wonder, <em is there any way I can see the state of the cluster and the partitions </em>? You can
 use the `sinfo` command
 
 ```bash
@@ -975,7 +957,7 @@ scavenger    up   infinite      1   down legacy-n12
 [gnowmik@login1 mocvnhlysm_2GTX1080.2C]$
 ```
 
-You can use a similar syntax for the `squeue` command to see all the jobs you have submitted. 
+You can use a similar syntax for the `squeue` command to see all the jobs you have submitted.
 
 ```bash
 [gnowmik@login1 mocvnhlysm_2GTX1080.2C]$ squeue -M smp,gpu,mpi,htc -u $USER
@@ -1046,7 +1028,7 @@ CLUSTER: mpi
 
 CLUSTER: smp
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-[gnowmik@login1 mocvnhlysm_1v100.1C]$ 
+[gnowmik@login1 mocvnhlysm_1v100.1C]$
 ```
 To obtain more information about why the job is in the PD state, use the `scontrol` command
 
@@ -1394,10 +1376,13 @@ crc-interactive.py   crc-proposal-end.py  crc-scancel.py       crc-sinfo.py     
 [gnowmik@login1 ~]$ crc-
 ```
 
-## Asking for Help
+## What we've covered
+
+## Resources and Asking for Help
+
+- Website: [https://crc.pitt.edu](https://crc.pitt.edu)</li>
+- Getting Started: [https://crc.pitt.edu/getting-started](https://crc.pitt.edu/getting-started)
+- User Support: [https://crc.pitt.edu/UserSupport](https://crc.pitt.edu/UserSupport)
 
 The best way to get help is to submit a [help ticket](https://crc.pitt.edu/UserSupport). You should log in to the CRC website
-using your Pitt credentials first. 
-
-
-
+using your Pitt credentials first.
